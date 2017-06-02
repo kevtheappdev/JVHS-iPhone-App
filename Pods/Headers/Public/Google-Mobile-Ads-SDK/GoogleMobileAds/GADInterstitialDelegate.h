@@ -1,0 +1,5 @@
+XSym
+0132
+3995dff4a9c4d388a17defb93e77e097
+../../../../Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.7.0/GoogleMobileAds.framework/Versions/A/Headers/GADInterstitialDelegate.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           

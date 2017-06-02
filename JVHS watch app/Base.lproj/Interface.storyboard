@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="JVHS_watch_app" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="LjQ-ur-53q">
+                            <items>
+                                <tableRow identifier="ClassTableRow" id="n9C-iv-nPc" customClass="ClassTableRowController" customModule="JVHS_watch_app_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="wSt-wC-hsK">
+                                        <items>
+                                            <label width="75" height="39.5" alignment="left" textAlignment="center" numberOfLines="0" id="it5-yd-mEv"/>
+                                            <label width="44.5" height="34.5" alignment="left" id="Zhj-if-DeN"/>
+                                        </items>
+                                        <connections>
+                                            <segue destination="J1S-ZU-H7g" kind="push" id="aGZ-BR-EdX"/>
+                                        </connections>
+                                    </group>
+                                    <connections>
+                                        <outlet property="averageLabel" destination="Zhj-if-DeN" id="b24-uW-0hl"/>
+                                        <outlet property="classLabel" destination="it5-yd-mEv" id="As8-d1-sBF"/>
+                                        <outlet property="rowGroup" destination="wSt-wC-hsK" id="kp0-dG-7pM"/>
+                                    </connections>
+                                </tableRow>
+                                <tableRow identifier="LoadingRow" selectable="NO" id="iN5-yf-rcG" customClass="LoadingCell" customModule="JVHS_watch_app_Extension">
+                                    <group key="rootItem" width="1" height="152.5" alignment="left" id="3O5-DW-Xcc">
+                                        <items>
+                                            <label width="136" height="225.5" alignment="left" text="Loading.." textAlignment="center" id="twZ-QL-eS2"/>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="loadingLabel" destination="twZ-QL-eS2" id="Sx8-2Q-anA"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="classTable" destination="LjQ-ur-53q" id="Kn2-6p-tpw"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="207" y="354.5"/>
+        </scene>
+        <!--Course Interface Controller-->
+        <scene sceneID="Ypn-hV-fYJ">
+            <objects>
+                <controller id="J1S-ZU-H7g" customClass="CourseInterfaceController" customModule="JVHS_watch_app_Extension">
+                    <items>
+                        <table alignment="left" id="h2x-3s-fPe">
+                            <items>
+                                <tableRow identifier="assignments" id="PgT-7V-xA9" customClass="AssignmentTableRowController" customModule="JVHS_watch_app_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="hUb-9c-JuP">
+                                        <items>
+                                            <label width="76.5" height="33.5" alignment="left" text="Label" textAlignment="center" numberOfLines="0" id="RHt-Nj-55f"/>
+                                            <label width="44.5" height="34.5" alignment="left" id="WMQ-RG-NcP"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="assignLabel" destination="RHt-Nj-55f" id="yQA-N8-GVJ"/>
+                                        <outlet property="gradeLabel" destination="WMQ-RG-NcP" id="j3m-yJ-Gjd"/>
+                                        <outlet property="rowGroup" destination="hUb-9c-JuP" id="5oN-jf-KwG"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="assignmentTable" destination="h2x-3s-fPe" id="KzS-EJ-T8h"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="461" y="355"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="OFm-Nc-D6D">
+            <objects>
+                <controller id="Vqd-SC-NuF">
+                    <menu key="menu" id="eHf-MM-ieH">
+                        <items>
+                            <menuItem title="Menu Item" id="bi7-UZ-L2d" userLabel="Menu 1"/>
+                            <menuItem title="Menu Item" id="BJV-oM-n8R"/>
+                        </items>
+                    </menu>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="849" y="333"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="XkS-y5-khE"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="235" y="1001"/>
+        </scene>
+    </scenes>
+</document>

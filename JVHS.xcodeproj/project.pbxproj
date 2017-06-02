@@ -1,0 +1,1085 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6810A4021CBAF08000F97E19 /* NotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6810A4011CBAF08000F97E19 /* NotificationDelegate.swift */; };
+		68294F031C9E52B7003C07E3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68294F021C9E52B7003C07E3 /* GoogleService-Info.plist */; };
+		683750D91CC9683200B0F42A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 683750D71CC9683200B0F42A /* Interface.storyboard */; };
+		683750DB1CC9683200B0F42A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 683750DA1CC9683200B0F42A /* Assets.xcassets */; };
+		683750E21CC9683200B0F42A /* JVHS watch app Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 683750E11CC9683200B0F42A /* JVHS watch app Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		683750ED1CC9683200B0F42A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683750EC1CC9683200B0F42A /* NotificationController.swift */; };
+		683750F31CC9683200B0F42A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 683750F21CC9683200B0F42A /* Assets.xcassets */; };
+		683750F71CC9683200B0F42A /* JVHS watch app.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 683750D51CC9683200B0F42A /* JVHS watch app.app */; };
+		683751041CC9754700B0F42A /* JVRequestDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683751021CC9754700B0F42A /* JVRequestDelegate.swift */; };
+		683751051CC9754700B0F42A /* JVRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683751031CC9754700B0F42A /* JVRequester.swift */; };
+		683751071CC9788000B0F42A /* ClassTableRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683751061CC9788000B0F42A /* ClassTableRowController.swift */; };
+		683751091CC979E000B0F42A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683751081CC979E000B0F42A /* User.swift */; };
+		684FDAE11C95E2B500903926 /* JVAnnouncementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684FDAE01C95E2B500903926 /* JVAnnouncementsViewController.swift */; };
+		684FDAE31C95E58300903926 /* JVAnnouncementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684FDAE21C95E58300903926 /* JVAnnouncementCell.swift */; };
+		684FDAE51C95F28000903926 /* JVAnnouncementsDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684FDAE41C95F28000903926 /* JVAnnouncementsDateCell.swift */; };
+		684FDAE71C963E9400903926 /* JVRSSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684FDAE61C963E9400903926 /* JVRSSViewController.swift */; };
+		684FDAE91C970C6500903926 /* JVRSSCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684FDAE81C970C6500903926 /* JVRSSCell.swift */; };
+		684FDAEB1C971FB900903926 /* JVSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684FDAEA1C971FB900903926 /* JVSettingsViewController.swift */; };
+		684FDAED1C97666E00903926 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 684FDAEC1C97666E00903926 /* launch.png */; };
+		6858E5571C8760B70093E5AA /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6858E5561C8760B70093E5AA /* LoginManager.swift */; };
+		686EDC381C85D8EC00F3750C /* bars.png in Resources */ = {isa = PBXBuildFile; fileRef = 686EDC311C85D8EC00F3750C /* bars.png */; };
+		686EDC391C85D8EC00F3750C /* book.png in Resources */ = {isa = PBXBuildFile; fileRef = 686EDC321C85D8EC00F3750C /* book.png */; };
+		686EDC3A1C85D8EC00F3750C /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 686EDC331C85D8EC00F3750C /* calendar.png */; };
+		686EDC3B1C85D8EC00F3750C /* bullhorn.png in Resources */ = {isa = PBXBuildFile; fileRef = 686EDC341C85D8EC00F3750C /* bullhorn.png */; };
+		686EDC3C1C85D8EC00F3750C /* news.png in Resources */ = {isa = PBXBuildFile; fileRef = 686EDC351C85D8EC00F3750C /* news.png */; };
+		686EDC3D1C85D8EC00F3750C /* cogs.png in Resources */ = {isa = PBXBuildFile; fileRef = 686EDC361C85D8EC00F3750C /* cogs.png */; };
+		686EDC3E1C85D8EC00F3750C /* pencil.png in Resources */ = {isa = PBXBuildFile; fileRef = 686EDC371C85D8EC00F3750C /* pencil.png */; };
+		686EDC401C8610A100F3750C /* JVTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686EDC3F1C8610A000F3750C /* JVTableViewController.swift */; };
+		686EDC421C8612D300F3750C /* JVClassTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686EDC411C8612D300F3750C /* JVClassTableViewCell.swift */; };
+		686EDC441C86172000F3750C /* JVRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686EDC431C86172000F3750C /* JVRequester.swift */; };
+		686EDC461C87556200F3750C /* JVRequestDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686EDC451C87556200F3750C /* JVRequestDelegate.swift */; };
+		686EDC4A1C87598300F3750C /* JVPersistenceStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686EDC491C87598300F3750C /* JVPersistenceStoreManager.swift */; };
+		686FE4011C84C00F008F5507 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686FE4001C84C00F008F5507 /* AppDelegate.swift */; };
+		686FE4031C84C00F008F5507 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686FE4021C84C00F008F5507 /* ViewController.swift */; };
+		686FE4061C84C00F008F5507 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 686FE4041C84C00F008F5507 /* Main.storyboard */; };
+		686FE40B1C84C00F008F5507 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 686FE40A1C84C00F008F5507 /* Assets.xcassets */; };
+		686FE40E1C84C00F008F5507 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 686FE40C1C84C00F008F5507 /* LaunchScreen.storyboard */; };
+		686FE4191C84C00F008F5507 /* GradeCheckerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686FE4181C84C00F008F5507 /* GradeCheckerTests.swift */; };
+		686FE4241C84C00F008F5507 /* GradeCheckerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686FE4231C84C00F008F5507 /* GradeCheckerUITests.swift */; };
+		686FE4321C84C186008F5507 /* JVCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686FE4311C84C186008F5507 /* JVCollectionViewController.swift */; };
+		68789DB51CD47EF500BD4CF2 /* JVScheduleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68789DB41CD47EF500BD4CF2 /* JVScheduleManager.swift */; };
+		687BC95D1C8E836100C39A43 /* JVCourseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687BC95C1C8E836100C39A43 /* JVCourseTableViewController.swift */; };
+		687BC95F1C8E84E000C39A43 /* JVCourseHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687BC95E1C8E84E000C39A43 /* JVCourseHeaderCell.swift */; };
+		687BC9611C8E85C000C39A43 /* JVUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687BC9601C8E85C000C39A43 /* JVUtility.swift */; };
+		687BC9631C8E8B9C00C39A43 /* JVAssignmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687BC9621C8E8B9C00C39A43 /* JVAssignmentCell.swift */; };
+		687BC9651C8E927F00C39A43 /* JVGradeDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687BC9641C8E927F00C39A43 /* JVGradeDetailController.swift */; };
+		687BC9671C8E93D400C39A43 /* JVGradeDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687BC9661C8E93D400C39A43 /* JVGradeDetailCell.swift */; };
+		687BC9691C8E9A9900C39A43 /* JVTeachersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687BC9681C8E9A9900C39A43 /* JVTeachersViewController.swift */; };
+		689F430E1C875BA1001726F7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689F430D1C875BA1001726F7 /* User.swift */; };
+		689FB9991CDA55BA00284B80 /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689FB9981CDA55BA00284B80 /* LoadingCell.swift */; };
+		689FB99D1CDA5E7700284B80 /* GradeCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689FB99C1CDA5E7700284B80 /* GradeCalculatorViewController.swift */; };
+		68B8E2641C908D86007E59EA /* JVLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8E2631C908D86007E59EA /* JVLoadingView.swift */; };
+		68FC3EAD1CD46A92008FC8F7 /* JVUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FC3EAC1CD46A91008FC8F7 /* JVUtility.swift */; };
+		68FC3EAF1CD46D40008FC8F7 /* CourseInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FC3EAE1CD46D40008FC8F7 /* CourseInterfaceController.swift */; };
+		68FC3EB11CD46EF5008FC8F7 /* AssignmentTableRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FC3EB01CD46EF5008FC8F7 /* AssignmentTableRowController.swift */; };
+		68FEBBE01CA05F5D00E19823 /* GradeChecker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 686FE4071C84C00F008F5507 /* GradeChecker.xcdatamodeld */; };
+		68FEBBE11CA05F6600E19823 /* JVHS-Swift.h in Sources */ = {isa = PBXBuildFile; fileRef = 684F728B1C9E58F100C00DA8 /* JVHS-Swift.h */; };
+		F17F36E7465E6E470ECBDE4F /* Pods_JVHS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C932B907EA4CBC82D6AB49B4 /* Pods_JVHS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		683750E31CC9683200B0F42A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 686FE3F51C84C00F008F5507 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 683750E01CC9683200B0F42A;
+			remoteInfo = "JVHS watch app Extension";
+		};
+		683750F51CC9683200B0F42A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 686FE3F51C84C00F008F5507 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 683750D41CC9683200B0F42A;
+			remoteInfo = "JVHS watch app";
+		};
+		686FE4151C84C00F008F5507 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 686FE3F51C84C00F008F5507 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 686FE3FC1C84C00F008F5507;
+			remoteInfo = GradeChecker;
+		};
+		686FE4201C84C00F008F5507 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 686FE3F51C84C00F008F5507 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 686FE3FC1C84C00F008F5507;
+			remoteInfo = GradeChecker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		683750FD1CC9683200B0F42A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				683750E21CC9683200B0F42A /* JVHS watch app Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		683750FF1CC9683200B0F42A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				683750F71CC9683200B0F42A /* JVHS watch app.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5A3AAC635BD9B3BAB042AF5E /* Pods-JVHS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JVHS.release.xcconfig"; path = "Pods/Target Support Files/Pods-JVHS/Pods-JVHS.release.xcconfig"; sourceTree = "<group>"; };
+		6810A4011CBAF08000F97E19 /* NotificationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationDelegate.swift; sourceTree = "<group>"; };
+		68294F021C9E52B7003C07E3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		683750D51CC9683200B0F42A /* JVHS watch app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JVHS watch app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		683750D81CC9683200B0F42A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		683750DA1CC9683200B0F42A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		683750DC1CC9683200B0F42A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		683750E11CC9683200B0F42A /* JVHS watch app Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "JVHS watch app Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		683750E71CC9683200B0F42A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		683750E81CC9683200B0F42A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		683750EA1CC9683200B0F42A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		683750EC1CC9683200B0F42A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		683750F01CC9683200B0F42A /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		683750F21CC9683200B0F42A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		683750F41CC9683200B0F42A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		683751021CC9754700B0F42A /* JVRequestDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVRequestDelegate.swift; sourceTree = "<group>"; };
+		683751031CC9754700B0F42A /* JVRequester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVRequester.swift; sourceTree = "<group>"; };
+		683751061CC9788000B0F42A /* ClassTableRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassTableRowController.swift; sourceTree = "<group>"; };
+		683751081CC979E000B0F42A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		684F728B1C9E58F100C00DA8 /* JVHS-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JVHS-Swift.h"; sourceTree = "<group>"; };
+		684FDAE01C95E2B500903926 /* JVAnnouncementsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JVAnnouncementsViewController.swift; path = ../JVAnnouncementsViewController.swift; sourceTree = "<group>"; };
+		684FDAE21C95E58300903926 /* JVAnnouncementCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JVAnnouncementCell.swift; path = ../JVAnnouncementCell.swift; sourceTree = "<group>"; };
+		684FDAE41C95F28000903926 /* JVAnnouncementsDateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JVAnnouncementsDateCell.swift; path = ../JVAnnouncementsDateCell.swift; sourceTree = "<group>"; };
+		684FDAE61C963E9400903926 /* JVRSSViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JVRSSViewController.swift; path = ../JVRSSViewController.swift; sourceTree = "<group>"; };
+		684FDAE81C970C6500903926 /* JVRSSCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JVRSSCell.swift; path = ../JVRSSCell.swift; sourceTree = "<group>"; };
+		684FDAEA1C971FB900903926 /* JVSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JVSettingsViewController.swift; path = ../JVSettingsViewController.swift; sourceTree = "<group>"; };
+		684FDAEC1C97666E00903926 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
+		6858E5561C8760B70093E5AA /* LoginManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginManager.swift; path = ../LoginManager.swift; sourceTree = "<group>"; };
+		686EDC311C85D8EC00F3750C /* bars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bars.png; sourceTree = "<group>"; };
+		686EDC321C85D8EC00F3750C /* book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book.png; sourceTree = "<group>"; };
+		686EDC331C85D8EC00F3750C /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
+		686EDC341C85D8EC00F3750C /* bullhorn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullhorn.png; sourceTree = "<group>"; };
+		686EDC351C85D8EC00F3750C /* news.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = news.png; sourceTree = "<group>"; };
+		686EDC361C85D8EC00F3750C /* cogs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cogs.png; sourceTree = "<group>"; };
+		686EDC371C85D8EC00F3750C /* pencil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pencil.png; sourceTree = "<group>"; };
+		686EDC3F1C8610A000F3750C /* JVTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVTableViewController.swift; sourceTree = "<group>"; };
+		686EDC411C8612D300F3750C /* JVClassTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JVClassTableViewCell.swift; path = ../JVClassTableViewCell.swift; sourceTree = "<group>"; };
+		686EDC431C86172000F3750C /* JVRequester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JVRequester.swift; path = ../JVRequester.swift; sourceTree = "<group>"; };
+		686EDC451C87556200F3750C /* JVRequestDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JVRequestDelegate.swift; path = ../JVRequestDelegate.swift; sourceTree = "<group>"; };
+		686EDC491C87598300F3750C /* JVPersistenceStoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JVPersistenceStoreManager.swift; path = ../JVPersistenceStoreManager.swift; sourceTree = "<group>"; };
+		686FE3FD1C84C00F008F5507 /* JVHS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JVHS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		686FE4001C84C00F008F5507 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		686FE4021C84C00F008F5507 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		686FE4051C84C00F008F5507 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		686FE4081C84C00F008F5507 /* GradeChecker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GradeChecker.xcdatamodel; sourceTree = "<group>"; };
+		686FE40A1C84C00F008F5507 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		686FE40D1C84C00F008F5507 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		686FE40F1C84C00F008F5507 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		686FE4141C84C00F008F5507 /* JVHS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JVHS.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		686FE4181C84C00F008F5507 /* GradeCheckerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeCheckerTests.swift; sourceTree = "<group>"; };
+		686FE41A1C84C00F008F5507 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		686FE41F1C84C00F008F5507 /* JVHS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JVHS.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		686FE4231C84C00F008F5507 /* GradeCheckerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeCheckerUITests.swift; sourceTree = "<group>"; };
+		686FE4251C84C00F008F5507 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		686FE4311C84C186008F5507 /* JVCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVCollectionViewController.swift; sourceTree = "<group>"; };
+		68789DB41CD47EF500BD4CF2 /* JVScheduleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVScheduleManager.swift; sourceTree = "<group>"; };
+		687BC95C1C8E836100C39A43 /* JVCourseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JVCourseTableViewController.swift; path = ../JVCourseTableViewController.swift; sourceTree = "<group>"; };
+		687BC95E1C8E84E000C39A43 /* JVCourseHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVCourseHeaderCell.swift; sourceTree = "<group>"; };
+		687BC9601C8E85C000C39A43 /* JVUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JVUtility.swift; path = ../JVUtility.swift; sourceTree = "<group>"; };
+		687BC9621C8E8B9C00C39A43 /* JVAssignmentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JVAssignmentCell.swift; path = ../JVAssignmentCell.swift; sourceTree = "<group>"; };
+		687BC9641C8E927F00C39A43 /* JVGradeDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVGradeDetailController.swift; sourceTree = "<group>"; };
+		687BC9661C8E93D400C39A43 /* JVGradeDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVGradeDetailCell.swift; sourceTree = "<group>"; };
+		687BC9681C8E9A9900C39A43 /* JVTeachersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVTeachersViewController.swift; sourceTree = "<group>"; };
+		689F430D1C875BA1001726F7 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = ../User.swift; sourceTree = "<group>"; };
+		689FB9981CDA55BA00284B80 /* LoadingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
+		689FB99C1CDA5E7700284B80 /* GradeCalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeCalculatorViewController.swift; sourceTree = "<group>"; };
+		68B8E2631C908D86007E59EA /* JVLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVLoadingView.swift; sourceTree = "<group>"; };
+		68DCC9031CB1A9210048040D /* GradeChecker 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "GradeChecker 2.xcdatamodel"; sourceTree = "<group>"; };
+		68FC3EAC1CD46A91008FC8F7 /* JVUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JVUtility.swift; sourceTree = "<group>"; };
+		68FC3EAE1CD46D40008FC8F7 /* CourseInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseInterfaceController.swift; sourceTree = "<group>"; };
+		68FC3EB01CD46EF5008FC8F7 /* AssignmentTableRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AssignmentTableRowController.swift; path = ../AssignmentTableRowController.swift; sourceTree = "<group>"; };
+		C932B907EA4CBC82D6AB49B4 /* Pods_JVHS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JVHS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F731984FC5A2AF75212AC90A /* Pods-JVHS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JVHS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JVHS/Pods-JVHS.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		683750DE1CC9683200B0F42A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		686FE3FA1C84C00F008F5507 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F17F36E7465E6E470ECBDE4F /* Pods_JVHS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		686FE4111C84C00F008F5507 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		686FE41C1C84C00F008F5507 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E9D6086371B99301BB36A6F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F731984FC5A2AF75212AC90A /* Pods-JVHS.debug.xcconfig */,
+				5A3AAC635BD9B3BAB042AF5E /* Pods-JVHS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5223458070CB5915D6D86478 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C932B907EA4CBC82D6AB49B4 /* Pods_JVHS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		683750D61CC9683200B0F42A /* JVHS watch app */ = {
+			isa = PBXGroup;
+			children = (
+				683750D71CC9683200B0F42A /* Interface.storyboard */,
+				683750DA1CC9683200B0F42A /* Assets.xcassets */,
+				683750DC1CC9683200B0F42A /* Info.plist */,
+			);
+			path = "JVHS watch app";
+			sourceTree = "<group>";
+		};
+		683750E51CC9683200B0F42A /* JVHS watch app Extension */ = {
+			isa = PBXGroup;
+			children = (
+				68FC3EB01CD46EF5008FC8F7 /* AssignmentTableRowController.swift */,
+				68FC3EAC1CD46A91008FC8F7 /* JVUtility.swift */,
+				683751081CC979E000B0F42A /* User.swift */,
+				683750E81CC9683200B0F42A /* InterfaceController.swift */,
+				683750EA1CC9683200B0F42A /* ExtensionDelegate.swift */,
+				683750EC1CC9683200B0F42A /* NotificationController.swift */,
+				683751021CC9754700B0F42A /* JVRequestDelegate.swift */,
+				683751031CC9754700B0F42A /* JVRequester.swift */,
+				683750F01CC9683200B0F42A /* ComplicationController.swift */,
+				68789DB41CD47EF500BD4CF2 /* JVScheduleManager.swift */,
+				683750F21CC9683200B0F42A /* Assets.xcassets */,
+				683750F41CC9683200B0F42A /* Info.plist */,
+				683750E61CC9683200B0F42A /* Supporting Files */,
+				683751061CC9788000B0F42A /* ClassTableRowController.swift */,
+				68FC3EAE1CD46D40008FC8F7 /* CourseInterfaceController.swift */,
+				689FB9981CDA55BA00284B80 /* LoadingCell.swift */,
+			);
+			path = "JVHS watch app Extension";
+			sourceTree = "<group>";
+		};
+		683750E61CC9683200B0F42A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				683750E71CC9683200B0F42A /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		686FE3F41C84C00F008F5507 = {
+			isa = PBXGroup;
+			children = (
+				6810A4011CBAF08000F97E19 /* NotificationDelegate.swift */,
+				686FE3FF1C84C00F008F5507 /* GradeChecker */,
+				686FE4171C84C00F008F5507 /* GradeCheckerTests */,
+				686FE4221C84C00F008F5507 /* GradeCheckerUITests */,
+				683750D61CC9683200B0F42A /* JVHS watch app */,
+				683750E51CC9683200B0F42A /* JVHS watch app Extension */,
+				686FE3FE1C84C00F008F5507 /* Products */,
+				3E9D6086371B99301BB36A6F /* Pods */,
+				5223458070CB5915D6D86478 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		686FE3FE1C84C00F008F5507 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				686FE3FD1C84C00F008F5507 /* JVHS.app */,
+				686FE4141C84C00F008F5507 /* JVHS.xctest */,
+				686FE41F1C84C00F008F5507 /* JVHS.xctest */,
+				683750D51CC9683200B0F42A /* JVHS watch app.app */,
+				683750E11CC9683200B0F42A /* JVHS watch app Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		686FE3FF1C84C00F008F5507 /* GradeChecker */ = {
+			isa = PBXGroup;
+			children = (
+				689FB99C1CDA5E7700284B80 /* GradeCalculatorViewController.swift */,
+				684F728B1C9E58F100C00DA8 /* JVHS-Swift.h */,
+				684FDAEA1C971FB900903926 /* JVSettingsViewController.swift */,
+				684FDAE81C970C6500903926 /* JVRSSCell.swift */,
+				684FDAE61C963E9400903926 /* JVRSSViewController.swift */,
+				684FDAE41C95F28000903926 /* JVAnnouncementsDateCell.swift */,
+				684FDAE21C95E58300903926 /* JVAnnouncementCell.swift */,
+				684FDAE01C95E2B500903926 /* JVAnnouncementsViewController.swift */,
+				6858E5561C8760B70093E5AA /* LoginManager.swift */,
+				687BC9601C8E85C000C39A43 /* JVUtility.swift */,
+				687BC9621C8E8B9C00C39A43 /* JVAssignmentCell.swift */,
+				689F430D1C875BA1001726F7 /* User.swift */,
+				687BC95C1C8E836100C39A43 /* JVCourseTableViewController.swift */,
+				68294F021C9E52B7003C07E3 /* GoogleService-Info.plist */,
+				686EDC491C87598300F3750C /* JVPersistenceStoreManager.swift */,
+				686EDC411C8612D300F3750C /* JVClassTableViewCell.swift */,
+				686EDC451C87556200F3750C /* JVRequestDelegate.swift */,
+				686EDC431C86172000F3750C /* JVRequester.swift */,
+				686FE4001C84C00F008F5507 /* AppDelegate.swift */,
+				686FE4021C84C00F008F5507 /* ViewController.swift */,
+				686FE4041C84C00F008F5507 /* Main.storyboard */,
+				687BC9661C8E93D400C39A43 /* JVGradeDetailCell.swift */,
+				684FDAEC1C97666E00903926 /* launch.png */,
+				687BC9681C8E9A9900C39A43 /* JVTeachersViewController.swift */,
+				687BC9641C8E927F00C39A43 /* JVGradeDetailController.swift */,
+				68B8E2631C908D86007E59EA /* JVLoadingView.swift */,
+				686FE4311C84C186008F5507 /* JVCollectionViewController.swift */,
+				686EDC3F1C8610A000F3750C /* JVTableViewController.swift */,
+				686FE40A1C84C00F008F5507 /* Assets.xcassets */,
+				686FE40C1C84C00F008F5507 /* LaunchScreen.storyboard */,
+				686FE40F1C84C00F008F5507 /* Info.plist */,
+				686FE4071C84C00F008F5507 /* GradeChecker.xcdatamodeld */,
+				687BC95E1C8E84E000C39A43 /* JVCourseHeaderCell.swift */,
+				686EDC311C85D8EC00F3750C /* bars.png */,
+				686EDC321C85D8EC00F3750C /* book.png */,
+				686EDC331C85D8EC00F3750C /* calendar.png */,
+				686EDC341C85D8EC00F3750C /* bullhorn.png */,
+				686EDC351C85D8EC00F3750C /* news.png */,
+				686EDC361C85D8EC00F3750C /* cogs.png */,
+				686EDC371C85D8EC00F3750C /* pencil.png */,
+			);
+			path = GradeChecker;
+			sourceTree = "<group>";
+		};
+		686FE4171C84C00F008F5507 /* GradeCheckerTests */ = {
+			isa = PBXGroup;
+			children = (
+				686FE4181C84C00F008F5507 /* GradeCheckerTests.swift */,
+				686FE41A1C84C00F008F5507 /* Info.plist */,
+			);
+			path = GradeCheckerTests;
+			sourceTree = "<group>";
+		};
+		686FE4221C84C00F008F5507 /* GradeCheckerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				686FE4231C84C00F008F5507 /* GradeCheckerUITests.swift */,
+				686FE4251C84C00F008F5507 /* Info.plist */,
+			);
+			path = GradeCheckerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		683750D41CC9683200B0F42A /* JVHS watch app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 683750FE1CC9683200B0F42A /* Build configuration list for PBXNativeTarget "JVHS watch app" */;
+			buildPhases = (
+				683750D31CC9683200B0F42A /* Resources */,
+				683750FD1CC9683200B0F42A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				683750E41CC9683200B0F42A /* PBXTargetDependency */,
+			);
+			name = "JVHS watch app";
+			productName = "JVHS watch app";
+			productReference = 683750D51CC9683200B0F42A /* JVHS watch app.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		683750E01CC9683200B0F42A /* JVHS watch app Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 683750FC1CC9683200B0F42A /* Build configuration list for PBXNativeTarget "JVHS watch app Extension" */;
+			buildPhases = (
+				683750DD1CC9683200B0F42A /* Sources */,
+				683750DE1CC9683200B0F42A /* Frameworks */,
+				683750DF1CC9683200B0F42A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JVHS watch app Extension";
+			productName = "JVHS watch app Extension";
+			productReference = 683750E11CC9683200B0F42A /* JVHS watch app Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		686FE3FC1C84C00F008F5507 /* JVHS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 686FE4281C84C00F008F5507 /* Build configuration list for PBXNativeTarget "JVHS" */;
+			buildPhases = (
+				9E70A8C99B7389315C2939AF /* Check Pods Manifest.lock */,
+				686FE3F91C84C00F008F5507 /* Sources */,
+				686FE3FA1C84C00F008F5507 /* Frameworks */,
+				686FE3FB1C84C00F008F5507 /* Resources */,
+				5A3444E5AA2AFB0E2D5CA1F1 /* Embed Pods Frameworks */,
+				C4CF2F802C943DA5466D5C25 /* Copy Pods Resources */,
+				683750FF1CC9683200B0F42A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				683750F61CC9683200B0F42A /* PBXTargetDependency */,
+			);
+			name = JVHS;
+			productName = GradeChecker;
+			productReference = 686FE3FD1C84C00F008F5507 /* JVHS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		686FE4131C84C00F008F5507 /* JVHSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 686FE42B1C84C00F008F5507 /* Build configuration list for PBXNativeTarget "JVHSTests" */;
+			buildPhases = (
+				686FE4101C84C00F008F5507 /* Sources */,
+				686FE4111C84C00F008F5507 /* Frameworks */,
+				686FE4121C84C00F008F5507 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				686FE4161C84C00F008F5507 /* PBXTargetDependency */,
+			);
+			name = JVHSTests;
+			productName = GradeCheckerTests;
+			productReference = 686FE4141C84C00F008F5507 /* JVHS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		686FE41E1C84C00F008F5507 /* JVHSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 686FE42E1C84C00F008F5507 /* Build configuration list for PBXNativeTarget "JVHSUITests" */;
+			buildPhases = (
+				686FE41B1C84C00F008F5507 /* Sources */,
+				686FE41C1C84C00F008F5507 /* Frameworks */,
+				686FE41D1C84C00F008F5507 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				686FE4211C84C00F008F5507 /* PBXTargetDependency */,
+			);
+			name = JVHSUITests;
+			productName = GradeCheckerUITests;
+			productReference = 686FE41F1C84C00F008F5507 /* JVHS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		686FE3F51C84C00F008F5507 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Kevin Turner";
+				TargetAttributes = {
+					683750D41CC9683200B0F42A = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = BYEYE4HSQ7;
+						LastSwiftMigration = 0800;
+					};
+					683750E01CC9683200B0F42A = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = BYEYE4HSQ7;
+						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					686FE3FC1C84C00F008F5507 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = BYEYE4HSQ7;
+						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					686FE4131C84C00F008F5507 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 686FE3FC1C84C00F008F5507;
+					};
+					686FE41E1C84C00F008F5507 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 686FE3FC1C84C00F008F5507;
+					};
+				};
+			};
+			buildConfigurationList = 686FE3F81C84C00F008F5507 /* Build configuration list for PBXProject "JVHS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 686FE3F41C84C00F008F5507;
+			productRefGroup = 686FE3FE1C84C00F008F5507 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				686FE3FC1C84C00F008F5507 /* JVHS */,
+				686FE4131C84C00F008F5507 /* JVHSTests */,
+				686FE41E1C84C00F008F5507 /* JVHSUITests */,
+				683750D41CC9683200B0F42A /* JVHS watch app */,
+				683750E01CC9683200B0F42A /* JVHS watch app Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		683750D31CC9683200B0F42A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				683750DB1CC9683200B0F42A /* Assets.xcassets in Resources */,
+				683750D91CC9683200B0F42A /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		683750DF1CC9683200B0F42A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				683750F31CC9683200B0F42A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		686FE3FB1C84C00F008F5507 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				686EDC3E1C85D8EC00F3750C /* pencil.png in Resources */,
+				686EDC3C1C85D8EC00F3750C /* news.png in Resources */,
+				686FE40E1C84C00F008F5507 /* LaunchScreen.storyboard in Resources */,
+				686EDC3D1C85D8EC00F3750C /* cogs.png in Resources */,
+				686EDC3A1C85D8EC00F3750C /* calendar.png in Resources */,
+				68294F031C9E52B7003C07E3 /* GoogleService-Info.plist in Resources */,
+				686EDC391C85D8EC00F3750C /* book.png in Resources */,
+				684FDAED1C97666E00903926 /* launch.png in Resources */,
+				686FE40B1C84C00F008F5507 /* Assets.xcassets in Resources */,
+				686EDC3B1C85D8EC00F3750C /* bullhorn.png in Resources */,
+				686FE4061C84C00F008F5507 /* Main.storyboard in Resources */,
+				686EDC381C85D8EC00F3750C /* bars.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		686FE4121C84C00F008F5507 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		686FE41D1C84C00F008F5507 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A3444E5AA2AFB0E2D5CA1F1 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JVHS/Pods-JVHS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E70A8C99B7389315C2939AF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C4CF2F802C943DA5466D5C25 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JVHS/Pods-JVHS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		683750DD1CC9683200B0F42A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				683751041CC9754700B0F42A /* JVRequestDelegate.swift in Sources */,
+				683750ED1CC9683200B0F42A /* NotificationController.swift in Sources */,
+				68FC3EB11CD46EF5008FC8F7 /* AssignmentTableRowController.swift in Sources */,
+				683751071CC9788000B0F42A /* ClassTableRowController.swift in Sources */,
+				68FC3EAF1CD46D40008FC8F7 /* CourseInterfaceController.swift in Sources */,
+				689FB9991CDA55BA00284B80 /* LoadingCell.swift in Sources */,
+				683751091CC979E000B0F42A /* User.swift in Sources */,
+				68FC3EAD1CD46A92008FC8F7 /* JVUtility.swift in Sources */,
+				683751051CC9754700B0F42A /* JVRequester.swift in Sources */,
+				68789DB51CD47EF500BD4CF2 /* JVScheduleManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		686FE3F91C84C00F008F5507 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68FEBBE11CA05F6600E19823 /* JVHS-Swift.h in Sources */,
+				68FEBBE01CA05F5D00E19823 /* GradeChecker.xcdatamodeld in Sources */,
+				686EDC421C8612D300F3750C /* JVClassTableViewCell.swift in Sources */,
+				686EDC4A1C87598300F3750C /* JVPersistenceStoreManager.swift in Sources */,
+				684FDAE91C970C6500903926 /* JVRSSCell.swift in Sources */,
+				687BC9651C8E927F00C39A43 /* JVGradeDetailController.swift in Sources */,
+				684FDAE11C95E2B500903926 /* JVAnnouncementsViewController.swift in Sources */,
+				6810A4021CBAF08000F97E19 /* NotificationDelegate.swift in Sources */,
+				684FDAEB1C971FB900903926 /* JVSettingsViewController.swift in Sources */,
+				686FE4321C84C186008F5507 /* JVCollectionViewController.swift in Sources */,
+				687BC95F1C8E84E000C39A43 /* JVCourseHeaderCell.swift in Sources */,
+				687BC9691C8E9A9900C39A43 /* JVTeachersViewController.swift in Sources */,
+				686EDC401C8610A100F3750C /* JVTableViewController.swift in Sources */,
+				68B8E2641C908D86007E59EA /* JVLoadingView.swift in Sources */,
+				687BC9611C8E85C000C39A43 /* JVUtility.swift in Sources */,
+				684FDAE31C95E58300903926 /* JVAnnouncementCell.swift in Sources */,
+				686FE4031C84C00F008F5507 /* ViewController.swift in Sources */,
+				686FE4011C84C00F008F5507 /* AppDelegate.swift in Sources */,
+				6858E5571C8760B70093E5AA /* LoginManager.swift in Sources */,
+				684FDAE71C963E9400903926 /* JVRSSViewController.swift in Sources */,
+				687BC95D1C8E836100C39A43 /* JVCourseTableViewController.swift in Sources */,
+				686EDC461C87556200F3750C /* JVRequestDelegate.swift in Sources */,
+				687BC9631C8E8B9C00C39A43 /* JVAssignmentCell.swift in Sources */,
+				689F430E1C875BA1001726F7 /* User.swift in Sources */,
+				686EDC441C86172000F3750C /* JVRequester.swift in Sources */,
+				684FDAE51C95F28000903926 /* JVAnnouncementsDateCell.swift in Sources */,
+				689FB99D1CDA5E7700284B80 /* GradeCalculatorViewController.swift in Sources */,
+				687BC9671C8E93D400C39A43 /* JVGradeDetailCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		686FE4101C84C00F008F5507 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				686FE4191C84C00F008F5507 /* GradeCheckerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		686FE41B1C84C00F008F5507 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				686FE4241C84C00F008F5507 /* GradeCheckerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		683750E41CC9683200B0F42A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 683750E01CC9683200B0F42A /* JVHS watch app Extension */;
+			targetProxy = 683750E31CC9683200B0F42A /* PBXContainerItemProxy */;
+		};
+		683750F61CC9683200B0F42A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 683750D41CC9683200B0F42A /* JVHS watch app */;
+			targetProxy = 683750F51CC9683200B0F42A /* PBXContainerItemProxy */;
+		};
+		686FE4161C84C00F008F5507 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 686FE3FC1C84C00F008F5507 /* JVHS */;
+			targetProxy = 686FE4151C84C00F008F5507 /* PBXContainerItemProxy */;
+		};
+		686FE4211C84C00F008F5507 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 686FE3FC1C84C00F008F5507 /* JVHS */;
+			targetProxy = 686FE4201C84C00F008F5507 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		683750D71CC9683200B0F42A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				683750D81CC9683200B0F42A /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		686FE4041C84C00F008F5507 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				686FE4051C84C00F008F5507 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		686FE40C1C84C00F008F5507 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				686FE40D1C84C00F008F5507 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		683750F81CC9683200B0F42A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = JVHS_watch_app_Extension;
+				INFOPLIST_FILE = "JVHS watch app/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinturner.JVHS.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		683750F91CC9683200B0F42A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = JVHS_watch_app_Extension;
+				INFOPLIST_FILE = "JVHS watch app/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinturner.JVHS.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		683750FA1CC9683200B0F42A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "JVHS watch app Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinturner.JVHS.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		683750FB1CC9683200B0F42A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "JVHS watch app Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinturner.JVHS.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		686FE4261C84C00F008F5507 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		686FE4271C84C00F008F5507 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		686FE4291C84C00F008F5507 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F731984FC5A2AF75212AC90A /* Pods-JVHS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = GradeChecker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinturner.JVHS;
+				PRODUCT_NAME = JVHS;
+				SWIFT_OBJC_BRIDGING_HEADER = "GradeChecker/JVHS-Swift.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		686FE42A1C84C00F008F5507 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A3AAC635BD9B3BAB042AF5E /* Pods-JVHS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = GradeChecker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinturner.JVHS;
+				PRODUCT_NAME = JVHS;
+				SWIFT_OBJC_BRIDGING_HEADER = "GradeChecker/JVHS-Swift.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		686FE42C1C84C00F008F5507 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GradeCheckerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kevinturner.GradeCheckerTests;
+				PRODUCT_NAME = JVHS;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JVHS.app/JVHS";
+			};
+			name = Debug;
+		};
+		686FE42D1C84C00F008F5507 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GradeCheckerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kevinturner.GradeCheckerTests;
+				PRODUCT_NAME = JVHS;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JVHS.app/JVHS";
+			};
+			name = Release;
+		};
+		686FE42F1C84C00F008F5507 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GradeCheckerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kevinturner.GradeCheckerUITests;
+				PRODUCT_NAME = JVHS;
+				TEST_TARGET_NAME = GradeChecker;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		686FE4301C84C00F008F5507 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GradeCheckerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kevinturner.GradeCheckerUITests;
+				PRODUCT_NAME = JVHS;
+				TEST_TARGET_NAME = GradeChecker;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		683750FC1CC9683200B0F42A /* Build configuration list for PBXNativeTarget "JVHS watch app Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				683750FA1CC9683200B0F42A /* Debug */,
+				683750FB1CC9683200B0F42A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		683750FE1CC9683200B0F42A /* Build configuration list for PBXNativeTarget "JVHS watch app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				683750F81CC9683200B0F42A /* Debug */,
+				683750F91CC9683200B0F42A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		686FE3F81C84C00F008F5507 /* Build configuration list for PBXProject "JVHS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				686FE4261C84C00F008F5507 /* Debug */,
+				686FE4271C84C00F008F5507 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		686FE4281C84C00F008F5507 /* Build configuration list for PBXNativeTarget "JVHS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				686FE4291C84C00F008F5507 /* Debug */,
+				686FE42A1C84C00F008F5507 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		686FE42B1C84C00F008F5507 /* Build configuration list for PBXNativeTarget "JVHSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				686FE42C1C84C00F008F5507 /* Debug */,
+				686FE42D1C84C00F008F5507 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		686FE42E1C84C00F008F5507 /* Build configuration list for PBXNativeTarget "JVHSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				686FE42F1C84C00F008F5507 /* Debug */,
+				686FE4301C84C00F008F5507 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		686FE4071C84C00F008F5507 /* GradeChecker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				68DCC9031CB1A9210048040D /* GradeChecker 2.xcdatamodel */,
+				686FE4081C84C00F008F5507 /* GradeChecker.xcdatamodel */,
+			);
+			currentVersion = 68DCC9031CB1A9210048040D /* GradeChecker 2.xcdatamodel */;
+			path = GradeChecker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 686FE3F51C84C00F008F5507 /* Project object */;
+}

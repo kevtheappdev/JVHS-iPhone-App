@@ -1,0 +1,5 @@
+XSym
+0134
+01987c33e369108d41d5726b8b2e6648
+../../../../Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.7.0/GoogleMobileAds.framework/Versions/A/Headers/GADNativeCustomTemplateAd.h
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
